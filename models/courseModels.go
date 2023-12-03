@@ -16,7 +16,7 @@ type Course struct {
 	Department     Department
 	PrerequisiteID int
 	Prerequisite   *Course
-	credits        int
+	Credits        int
 }
 
 type Program struct {
