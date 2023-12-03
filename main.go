@@ -7,5 +7,5 @@ import (
 func main() {
 	// This is where all the APIs will be set up to run
 	r := gin.Default()
-	r.Run()
+	r.Run() // Runs on any port specified in environment variable, default is 8080
 }
