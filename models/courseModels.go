@@ -2,14 +2,14 @@ package models
 
 import "gorm.io/gorm"
 
+// Department model
 type Department struct {
-	// Department model
 	gorm.Model
 	Name string
 }
 
+// Course model
 type Course struct {
-	// Course model
 	gorm.Model
 	Name           string
 	DepartmentID   int
@@ -19,8 +19,8 @@ type Course struct {
 	Credits        int
 }
 
+// Program model - for example Masters in something
 type Program struct {
-	// Program model - for example Masters in something
 	gorm.Model
 	Name         string
 	Courses      []Course `gorm:"many2many:program_courses;"`
